@@ -19,7 +19,7 @@ Swagger UI will be available at:
 👉 http://localhost:5191/swagger
 
 
-# 📚 Endpoints (MVP)
+## 📚 Endpoints (MVP)
 Pets
 GET /pets → list pets (supports page, pageSize, ownerId filters)
 GET /pets/{id} → get single pet by ID
@@ -40,28 +40,32 @@ PUT /appointments/{id} → update appointment
 DELETE /appointments/{id} → cancel appointment
 
 
-# 🧪 Example Usage 
+## 🧪 Example Usage 
 Create an owner:
 curl -X POST http://localhost:5191/owners \
  -H "Content-Type: application/json" \
  -d '{"name":"Carolina","email":"carolina@example.com"}'
+
 Create a pet for that owner:
+
 curl -X POST http://localhost:5191/pets \
  -H "Content-Type: application/json" \
  -d '{"name":"Rover","species":"Dog","ownerId":1}'
+ 
 Create an appointment for that pet:
+
 curl -X POST http://localhost:5191/appointments \
  -H "Content-Type: application/json" \
  -d '{"petId":1,"when":"2025-09-03T15:00:00","reason":"Checkup"}'
 
 
-# 🛠 Tech Stack
+## 🛠 Tech Stack
 .NET 8
 ASP.NET Core Web API
 Entity Framework Core + SQLite
 Swagger/OpenAPI
 
-# 📌 Status
+## 📌 Status
 MVP complete with persistence, filtering, and relationships.
 Future improvements: authentication, deployment, and automated tests.
 
