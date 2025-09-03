@@ -70,6 +70,3 @@ MVP complete with persistence, filtering, and relationships.
 Future improvements: authentication, deployment, and automated tests.
 
 
----
-
-👉 Do you want me to also make a **short version** for your GitHub repo description (the one-line “About” section) so it matches the tone of this README?
